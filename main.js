@@ -15,7 +15,7 @@ function getHours() {
         .then(json => {
             console.log(json.hours);
             document.getElementsByClassName('goal')[0].innerHTML = json.hours;
-            document.getElementById('amount').style.height = `${json.hours}%`
+            document.getElementById('amount').style.height = `${json.hours}%`;
         });
 }
 
